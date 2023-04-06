@@ -299,7 +299,7 @@ namespace ConsoleApp1
         {
             string accessToken = ConfigurationManager.AppSettings["accessToken"];
 
-            string apiUrl = "https://api.dynamosoftware.com/api/v2.1/Entity/Document/" + documentId + "?mobile=false";
+            string apiUrl = "https://api.test.com/api/v2.1/Entity/Document/" + documentId + "?mobile=false";
 
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
